@@ -35,8 +35,8 @@ All the data can be found [here](https://d396qusza40orc.cloudfront.net/getdata%2
 * full_data <- rbind(train_data, test_data)
 
 ### Step 2: Measurements that only contain mean and stddev were selected
-    grepl was used to get logical operator YES for measurements containing standard deviation, mean and id; 
-    data set was updated only with measurements == Yes from the line above 
+* grepl was used to get logical operator YES for measurements containing standard deviation, mean and id
+* data set was updated only with measurements == Yes from the line above 
 
 ### Step 3: Descriptive activity names
   Data set was assignes descriptive activity names by merging data with activity_labels
@@ -45,4 +45,6 @@ All the data can be found [here](https://d396qusza40orc.cloudfront.net/getdata%2
   gsub was used to substitute names 
   
 ### Step 5: tidyData was created 
-  in this step 1. activityType was removed, 2. Data aggregated using mean of each variable for each activity and each subject, 3. data set was merged back with activity_labels, 4. Data was written as tidyData.txt
+ * ActivityType was removed 
+ * Data aggregated using mean of each variable for each activity and each subject
+ * Data set was merged back with activity_labels, 4. Data was written as tidyData.txt
