@@ -13,29 +13,26 @@ The dataset is then divided in two parts and they can be used separately.
 --3. An identifier of the subject who carried out the experiment.
 
 ###Assignment: 
-    ########1. Merges the training and the test sets to create one data set.
-    ########2. Extracts only the measurements on the mean and standard deviation for each measurement. 
-    ########3. Uses descriptive activity names to name the activities in the data set
-    ########4. Appropriately labels the data set with descriptive variable names. 
-    ########5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+    1. Merges the training and the test sets to create one data set.
+    2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+    3. Uses descriptive activity names to name the activities in the data set
+    4. Appropriately labels the data set with descriptive variable names. 
+    5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ## Steps in the script run_analysis.R
 All the data can be found [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 #### Step 1: Files below were read in and combines using cbind and rbind. Column names were assigned as well. 
 * features.txt
 * activity_labels.txt
-
 * x_train.txt
 * y_train.txt
 * subject_train.txt
-train_data <- cbind(x_train, y_train, subj_train)
-
+* train_data <- cbind(x_train, y_train, subj_train)
 * x_test.txt
 * y_test.txt
 * subject_test.txt
-test_data <- cbind(x_test, y_test, subj_test)
-
-full_data <- rbind(train_data, test_data)
+* test_data <- cbind(x_test, y_test, subj_test)
+* full_data <- rbind(train_data, test_data)
 
 ### Step 2: Measurements that only contain mean and stddev were selected using logical operator
 
@@ -46,5 +43,4 @@ full_data <- rbind(train_data, test_data)
   gsub was used to substitute names 
   
 ### Step 5: tidyData was created 
-  in this step 1. activityType was removed, 2. Data aggregated using mean of each variable for each activity and each subject, 3. data set was merged back with activity_labels
-  4. Data was written as tidyData.txt
+  in this step 1. activityType was removed, 2. Data aggregated using mean of each variable for each activity and each subject, 3. data set was merged back with activity_labels, 4. Data was written as tidyData.txt
