@@ -2,10 +2,10 @@
 Final project in the Coursera Getting and Cleaning data course
 Olga Cuznetova
 
-##The purpose of the run_analysis.R is to prepare tidy data from the original dataset for further analysis. 
+
 
 ##Overview of the project: 
-An experiment has been run on 30 people using  accelerometer and gyroscope technologies. Training data represents 70% of the data and testing - 30%. Participants were tested during different activities and all the collected data can be found in the following **[zip file](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)**. 
+The purpose of the run_analysis.R is to prepare tidy data from the original dataset for further analysis. An experiment has been run on 30 people using  accelerometer and gyroscope technologies. Training data represents 70% of the data and testing - 30%. Participants were tested during different activities and all the collected data can be found in the following **[zip file](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)**. 
 You can find further information on experiment and data **[here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)**. 
 
 ##Modifications
