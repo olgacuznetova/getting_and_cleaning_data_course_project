@@ -21,7 +21,7 @@ The dataset is then divided in two parts and they can be used separately.
 
 ## Steps in the script run_analysis.R
 All the data can be found [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
-#### Step 1: Files below were read in and combines using cbind and rbind. Column names were assigned as well. 
+### Step 1: Files below were read in and combines using cbind and rbind. Column names were assigned as well. 
 * features.txt
 * activity_labels.txt
 * x_train.txt
@@ -34,7 +34,9 @@ All the data can be found [here](https://d396qusza40orc.cloudfront.net/getdata%2
 * test_data <- cbind(x_test, y_test, subj_test)
 * full_data <- rbind(train_data, test_data)
 
-### Step 2: Measurements that only contain mean and stddev were selected using logical operator
+### Step 2: Measurements that only contain mean and stddev were selected
+    grepl was used to get logical operator YES for measurements containing standard deviation, mean and id; 
+    data set was updated only with measurements == Yes from the line above 
 
 ### Step 3: Descriptive activity names
   Data set was assignes descriptive activity names by merging data with activity_labels
