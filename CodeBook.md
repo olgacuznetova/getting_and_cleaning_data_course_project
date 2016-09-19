@@ -47,4 +47,5 @@ All the data can be found [here](https://d396qusza40orc.cloudfront.net/getdata%2
 ### Step 5: tidyData was created 
  * ActivityType was removed 
  * Data aggregated using mean of each variable for each activity and each subject
- * Data set was merged back with activity_labels, 4. Data was written as tidyData.txt
+ * Data set was merged back with activity_labels, 
+ * Data was written as tidyData.txt
